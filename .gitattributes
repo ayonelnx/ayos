@@ -1,0 +1,15 @@
+# GitHub Pages serves files straight from the repository and does not resolve
+# Git LFS pointers, so binaries are stored as-is (no filter=lfs rules here).
+* text=auto eol=lf
+
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+*.ico  binary
+*.pdf  binary
+*.woff binary
+*.woff2 binary
+*.ttf  binary
+*.otf  binary
