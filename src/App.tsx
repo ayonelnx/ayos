@@ -77,15 +77,6 @@ const editions = [
     className: 'edition-purple',
   },
   {
-    id: 'angel',
-    name: 'Angel',
-    desktop: 'Niri + AngelOS',
-    label: 'Для новых ощущений',
-    description: 'Тайлинговый Wayland-композитор Niri и продуманная среда от MixaDoDs.',
-    icon: 'layers' as IconName,
-    className: 'edition-blue',
-  },
-  {
     id: 'barebone',
     name: 'Barebone',
     desktop: 'Только TTY',
@@ -106,7 +97,7 @@ const editions = [
   },
 ]
 
-const releaseUrl = 'https://github.com/AyOS-Linux/ayosiso/releases/tag/26.11'
+const releaseUrl = 'https://github.com/AyOS-Linux/ayosiso/releases/tag/26.2'
 const repoUrl = 'https://github.com/AyOS-Linux/ayosiso'
 
 const roadmap = [
@@ -176,7 +167,7 @@ function App() {
 
         <section className="hero">
           <div className="hero-copy">
-            <div className="eyebrow"><span></span> AyOS Material 26.11</div>
+            <div className="eyebrow"><span></span> AyOS Material 26.2</div>
             <h1>Linux, который<br /><em>чувствует тебя.</em></h1>
             <p className="hero-description">
               Свежий Arch внутри. Простой установщик снаружи.
@@ -219,15 +210,14 @@ function App() {
                 <span></span><span></span><span></span><span></span><span></span>
               </div>
             </div>
-            <div className="floating-chip chip-release"><Icon name="sparkle" size={18} /> Material 26.11</div>
-            <div className="floating-chip chip-kernel"><span className="pulse"></span> Linux Zen готов</div>
+            <div className="floating-chip chip-release"><Icon name="sparkle" size={18} /> Material 26.2</div>
           </div>
         </section>
 
         <section className="editions-section" id="editions">
           <div className="section-heading">
             <div>
-              <span className="section-kicker">Один AyOS. Пять характеров.</span>
+              <span className="section-kicker">Один AyOS. Четыре характера.</span>
               <h2>Найди свою редакцию</h2>
             </div>
             <p>Не нужно разбираться в сотнях настроек. Начни с готовой основы, которая подходит именно тебе.</p>
@@ -301,18 +291,8 @@ function App() {
                 <i></i>
                 <span className="done"><Icon name="check" size={14} /> Редакция</span>
                 <i></i>
-                <span className="active">Ядро</span>
-                <i></i>
-                <span>Готово</span>
+                <span className="active">Готово</span>
               </div>
-            </article>
-
-            <article className="feature-card">
-              <span className="feature-icon"><Icon name="layers" size={25} /></span>
-              <span>Выбор ядра</span>
-              <h3>Linux, LTS или Zen</h3>
-              <p>Стабильность, совместимость или отзывчивость — решать тебе прямо во время установки.</p>
-              <div className="kernel-chips"><span>linux</span><span>linux-lts</span><span>linux-zen</span></div>
             </article>
 
             <article className="feature-card accent-feature">
@@ -357,7 +337,7 @@ function App() {
           <div className="download-logo"><img src={ayoneMark} alt="" /></div>
           <span className="section-kicker">Готовы попробовать?</span>
           <h2>Твоя система.<br />Твои правила.</h2>
-          <p>Скачай AyOS Material 26.11 и выбери свою редакцию во время установки.</p>
+          <p>Скачай AyOS Material 26.2 и выбери свою редакцию во время установки.</p>
           <div className="download-actions">
             <a className="button button-dark" href={releaseUrl} target="_blank" rel="noreferrer">
               <Icon name="download" />

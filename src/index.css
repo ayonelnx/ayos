@@ -508,20 +508,6 @@
   transform: rotate(4deg);
 }
 
-.chip-kernel {
-  bottom: 48px;
-  left: 20px;
-  transform: rotate(-3deg);
-}
-
-.pulse {
-  background: #42a866;
-  border: 3px solid #ceefd8;
-  border-radius: 50%;
-  height: 11px;
-  width: 11px;
-}
-
 .editions-section {
   background: #24211f;
   color: white;
@@ -644,10 +630,6 @@
   height: 100%;
   justify-content: center;
   position: relative;
-}
-
-.edition-blue .edition-art {
-  background: radial-gradient(circle at 74% 24%, #98c6ff, transparent 28%), linear-gradient(135deg, #769bff, #7455c7);
 }
 
 .edition-dark .edition-art {
@@ -905,26 +887,9 @@
   width: 8px;
 }
 
-.kernel-chips {
-  display: grid;
-  gap: 5px;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin-top: auto;
-  padding-top: 22px;
-}
-
-.kernel-chips span {
-  background: white;
-  border-radius: 99px;
-  color: #655e58;
-  font-family: monospace;
-  font-size: 9px;
-  padding: 6px 9px;
-  text-align: center;
-}
-
 .accent-feature {
   background: var(--orange-pale);
+  grid-column: 1 / -1;
 }
 
 .accent-feature strong {
@@ -1321,11 +1286,6 @@ footer > span {
     top: 32px;
   }
 
-  .chip-kernel {
-    bottom: 35px;
-    left: 0;
-  }
-
   .section-heading {
     align-items: flex-start;
     flex-direction: column;
@@ -1429,10 +1389,6 @@ footer > span {
   .chip-release {
     right: -6px;
     top: 15px;
-  }
-
-  .chip-kernel {
-    bottom: 16px;
   }
 
   .editions-section {
